@@ -8,8 +8,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Sol Converter</title>
-        <meta name="description" content="Convert Sol to Lamports" />
+        <title>Arweave Converter</title>
+        <meta name="description" content="Convert Arweave to Winston" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
