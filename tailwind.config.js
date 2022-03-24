@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'arweave-primary': '#6bd3d5',
+        'arweave-primary': '#7FF7F9',
         'arweave-background': '#141422'
       },
     },
