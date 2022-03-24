@@ -33,14 +33,11 @@ export default function Converter() {
                 value={ar}
                 updateFn={updateFromAr}
             />
-            {/* <SwitchHorizontalIcon
-                className="h-8 w-8 mt-6 text-solana-green"
-            /> */}
             <span className="mt-8">
                 =
             </span>
             <CurrencyInput
-                label='Winstons'
+                label='Winston'
                 value={winstons}
                 updateFn={updateFromLamports}
             />

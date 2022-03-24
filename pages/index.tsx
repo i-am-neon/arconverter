@@ -19,10 +19,10 @@ const Home: NextPage = () => {
         <main className="-mt-32 flex-grow">
           <header className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h1 className="text-xl font-semibold">Convert Sol to Lamports and back</h1>
+              <h1 className="text-xl font-semibold">Convert AR to Winston and back</h1>
               <p>
                 <a href="https://arweave.news/winston-and-the-memory-hole-the-arweave-name-explained/" target='_blank' rel="noreferrer">Winstons</a> are
-                Solana&apos;s atomic units - the smallest denomination of Sol.
+                Arweave&apos;s atomic units - the smallest denomination of AR.
               </p>
             </div>
           </header>
