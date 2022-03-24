@@ -44,11 +44,11 @@ export default function CurrencyInput(props: CurrencyInputProps) {
           value={props.value}
           onChange={(e: any) => updateValue(e.target.value)}
           onFocus={selectAll}
-          className="shadow-sm bg-inherit focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm text-white rounded-md"
+          className="shadow-sm bg-inherit focus:ring-arweave-primary focus:border-arweave-primary block w-full pr-12 sm:text-sm text-white rounded-md"
         />
         <div className="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
           <button
-            className="inline-flex items-center rounded px-2 text-sm font-sans font-medium text-gray-400 hover:text-solana-green"
+            className="inline-flex items-center rounded px-2 text-sm font-sans font-medium text-gray-400 hover:text-arweave-primary"
             onClick={handleCopy}
           >
             <DuplicateIcon

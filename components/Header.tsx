@@ -16,13 +16,13 @@ export default function Header() {
                                             <a className='flex'>
                                                 <div className="flex-shrink-0">
                                                     <SwitchHorizontalIcon
-                                                        className="h-8 w-8 text-solana-green"
+                                                        className="h-8 w-8 text-arweave-primary"
                                                     />
                                                 </div>
                                                 <h1 className='text-xl'>
                                                     <a className='flex text-white'>
                                                         <div className='ml-3'>
-                                                            <span className='font-light'>Sol</span>
+                                                            <span className='font-light'>Ar</span>
                                                             <span className='font-semibold'>Converter</span>
                                                         </div>
                                                     </a>
@@ -33,12 +33,12 @@ export default function Header() {
                                         <div className="hidden md:block">
                                             <div className="ml-10 flex items-baseline space-x-4">
                                                 <a
-                                                    href="https://www.arconverter.com"
+                                                    href="https://www.solconverter.com"
                                                     target='_blank'
                                                     rel="noreferrer"
                                                     className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
                                                 >
-                                                    Arweave Converter
+                                                    Sol Converter
                                                 </a>
                                             </div>
                                         </div>

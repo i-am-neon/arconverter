@@ -32,7 +32,7 @@ export default function CopyNotification(props: CopyNotificationProps) {
               <div className="p-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <CheckCircleIcon className="h-6 w-6 text-solana-green" aria-hidden="true" />
+                    <CheckCircleIcon className="h-6 w-6 text-arweave-primary" aria-hidden="true" />
                   </div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
                     <p className="text-sm font-medium text-white">Copied!</p>

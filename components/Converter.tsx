@@ -1,30 +1,37 @@
-import { SwitchHorizontalIcon } from "@heroicons/react/outline";
 import CurrencyInput from "./CurrencyInput";
-import { LAMPORTS_PER_SOL } from '@solana/web3.js';
+import Arweave from 'arweave';
 import { useState } from "react";
 
-export default function Converter() {
-    const [sol, setSol] = useState(1);
-    const [lamports, setLamports] = useState(1 * LAMPORTS_PER_SOL);
+const arToWinstons = (arweave: Arweave, ar: number): number => {
+    return +arweave.ar.arToWinston(ar.toString());
+}
 
-    const updateFromSol = (newSolValue: number): void => {
-        console.log('newSolValue :>> ', newSolValue);
-        setSol(newSolValue);
-        setLamports(newSolValue * LAMPORTS_PER_SOL);
+const winstonsToAr = (arweave: Arweave, winstons: number): number => {
+    return +arweave.ar.winstonToAr(winstons.toString());
+}
+
+export default function Converter() {
+    const [arweave, setArweave] = useState(Arweave.init({}));
+    const [ar, setAr] = useState(1);
+    const [winstons, setWinstons] = useState(arToWinstons(arweave, 1));
+    
+
+    const updateFromAr = (newArValue: number): void => {
+        setAr(newArValue);
+        setWinstons(arToWinstons(arweave, newArValue));
     }
 
     const updateFromLamports = (newLamportValue: number): void => {
-        console.log('newLamportValue :>> ', newLamportValue);
-        setSol(newLamportValue / LAMPORTS_PER_SOL);
-        setLamports(newLamportValue);
+        setAr(winstonsToAr(arweave, newLamportValue));
+        setWinstons(newLamportValue);
     }
 
     return (
         <div className="flex place-content-center my-12">
             <CurrencyInput
-                label='Sol'
-                value={sol}
-                updateFn={updateFromSol}
+                label='Ar'
+                value={ar}
+                updateFn={updateFromAr}
             />
             {/* <SwitchHorizontalIcon
                 className="h-8 w-8 mt-6 text-solana-green"
@@ -33,8 +40,8 @@ export default function Converter() {
                 =
             </span>
             <CurrencyInput
-                label='Lamports'
-                value={lamports}
+                label='Winstons'
+                value={winstons}
                 updateFn={updateFromLamports}
             />
         </div>
