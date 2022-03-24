@@ -29,7 +29,7 @@ export default function Converter() {
     return (
         <div className="flex place-content-center my-12">
             <CurrencyInput
-                label='Ar'
+                label='AR'
                 value={ar}
                 updateFn={updateFromAr}
                 isAtomicUnit={false}
