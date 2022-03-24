@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Arweave Converter</title>
-        <meta name="description" content="Convert Arweave to Winston" />
+        <meta name="description" content="Convert Arweave to Winston, the atomic unit of AR" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
