@@ -32,6 +32,7 @@ export default function Converter() {
                 label='Ar'
                 value={ar}
                 updateFn={updateFromAr}
+                isAtomicUnit={false}
             />
             <span className="mt-8">
                 =
@@ -40,6 +41,7 @@ export default function Converter() {
                 label='Winston'
                 value={winstons}
                 updateFn={updateFromLamports}
+                isAtomicUnit={true}
             />
         </div>
     )
