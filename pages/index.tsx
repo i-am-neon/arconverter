@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <meta property="og:description" content="Convert Arweave to Winston, the atomic unit of AR" />
         <meta property="og:url" content="https://www.arconverter.com/" />
         <meta property="og:image" content="https://arweave.net/iFSsRy2nec52ZU_2-jqLMp8W7GPP0wL5naJ4y3j-glg" />
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <meta name="theme-color" content="#7FF7F9" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
